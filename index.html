@@ -1,19 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gayathri&family=Roboto+Slab&display=swap" rel="stylesheet">
 </head>
-<div>
-    <p>l</p>
-    <p>o</p>
-    <p>a</p>
-    <p>d</p>
-    <p>i</p>
-    <p>n</p>
-    <p>g</p>
+
+<body onload="myFunction()" style="margin:0;">
+
+  <div id="wrapper">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="shadow"></div>
+    <div class="shadow"></div>
+    <div class="shadow"></div>
+    <span>Loading</span>
   </div>
-    
+
+
+  <div style="display:none;" id="myDiv" class="contents animate-bottom">
+    <header>
+      <h1>Hello! <br> ආයුබෝවන්! <br> Välkommen!</h1>
+    </header>
+    <main>
+      <div class="body-content">
+        <div class="text">
+          <h2>My journey from <br>Sri Lanka to Sweden.</h2>
+          <p>Human Resources associate, Teacher, Baker and what's next?
+            Frontend developer I suppose.
+          </p>
+        </div>
+        <div class="earth"></div>
+      </div>
+      <div class="first-chapter">
+        <h3>A walk down memory lane.</h3>
+        <p>I am a Sri Lankan who adores dogs. Back in Sri Lanka I was working as a Human Resources Associate
+          for nearly 10 years. I used to bake during my free time and as I was getting good at it,
+          baking became my second source of income. </p>
+      </div>
+      <div class="second-chapter">
+        <h3>Happily ever after begins now.</h3>
+        <p>I moved to Sweden in 2018 after the marriage and now I am
+          studing to become a Frontend developer. I love exploring Europe with my husband.
+          Though I don't have much time for baking, the baker inside me is still alive.
+        </p>
+      </div>
+    </main>
+    <footer>
+      <div class="end-note">
+        <div class="name"></div>
+        <p>&copy; 2020 Supipi Algama</p>
+      </div>
+      <div class="contact">
+        <p><a href="https://supipis.github.io/sugar-lips/">Visit Sugar lips.</a></p>
+      </div>
+    </footer>
+  </div>
+  </div>
+
+
+  <script>
+    var myVar;
+
+    function myFunction() {
+      myVar = setTimeout(showPage, 3000);
+    }
+
+    function showPage() {
+      document.getElementById("wrapper").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+    }
+  </script>
+
+
+
+
+
 </body>
+
 </html>
